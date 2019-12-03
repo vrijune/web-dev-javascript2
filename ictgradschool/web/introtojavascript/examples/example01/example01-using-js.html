@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Using JavaScript in your pages</title>
+
+        <script>
+            alert("This alert is in a code block in the page <head>. It runs as soon as the browser gets to that point in the file.");
+
+            function internalAlert() {
+                alert("This alert is in a function defined in the page <head>. It runs as soon as the function is called.");
+            }
+        </script>
+
+        <script src="example01-using-js.js"></script>
+    </head>
+    <body onload="pageLoadAlert()">
+
+        <p>Have a look at the alerts and the order which they run when the page loads.</p>
+
+        <p>These buttons below run the two functions:</p>
+        <button type="button" onclick="internalAlert()">Internal alert</button>
+        <button type="button" onclick="externalAlert()">External alert</button>
+
+        <script>
+            alert("This alert is in a code block in the page <body>. It runs as soon as the browser gets to that point in the file.");
+        </script>
+    </body>
+</html>

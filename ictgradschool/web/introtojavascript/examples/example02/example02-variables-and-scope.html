@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Variables and Scope</title>
+
+        <script src="example02-variables-and-scope.js"></script>
+
+    </head>
+    <body>
+
+        <script>
+            // We can access globally declared variables anywhere, even different files or different sections of the same file.
+            console.log("(from internal script): globalConst = " + globalConst);
+        </script>
+
+        <p>Check the browser console for output!</p>
+
+        <p>Run functions:</p>
+        <button type="button" onclick="varScopeDemo()">varScopeDemo()</button>
+        <button type="button" onclick="letScopeDemo()">letScopeDemo()</button>
+        <button type="button" onclick="constDemo()">constDemo()</button>
+        <button type="button" onclick="namingConflictDemo()">namingConflictDemo()</button>
+
+
+    </body>
+</html>

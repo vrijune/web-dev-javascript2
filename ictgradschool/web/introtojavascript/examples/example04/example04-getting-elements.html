@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Getting page elements</title>
+
+        <link rel="stylesheet" href="../../assets/site.css">
+
+        <script src="example04-getting-elements.js"></script>
+
+    </head>
+    <!-- The onload attribute specifies a function to be called once the page is finished loading. -->
+    <!-- To access information about elements on a page, we need to wait till those elements have finished loading. -->
+    <body onload="getInfoAboutElements()">
+
+        <div class="container">
+
+            <h1>This is an amazing heading!</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue dui, lobortis ut tincidunt vel,
+                suscipit pulvinar justo. Cras et consequat erat. Suspendisse potenti. Vestibulum laoreet tortor
+                consequat congue vestibulum. Etiam dolor quam, sodales vel ante in, rutrum sollicitudin nunc. Donec eu
+                malesuada dui. Aliquam erat volutpat. Duis tincidunt mi ut diam fermentum maximus. Integer sit amet orci
+                eu nisl vulputate sodales eget at ipsum. Nunc nulla erat, placerat tempus velit ac, rutrum bibendum
+                nibh. Donec varius quam sed ullamcorper suscipit. Integer finibus sagittis ante, sit amet molestie ante
+                auctor dapibus. Phasellus accumsan sit amet metus ut tincidunt. Sed ut neque vel ex iaculis
+                ullamcorper.</p>
+
+            <img class="float-left" src="http://via.placeholder.com/200">
+
+            <p>Sed rutrum, ligula aliquam luctus pretium, ex arcu euismod ipsum, id condimentum felis metus in lacus.
+                Aenean auctor, odio sed faucibus commodo, elit ipsum euismod lorem, at bibendum massa justo eget justo.
+                Proin fringilla tellus vel lacus fringilla lobortis. Mauris a dapibus ex. Proin non laoreet quam.
+                Praesent finibus nunc quis fringilla condimentum. Etiam a neque lorem. Duis semper rutrum faucibus.</p>
+
+            <h2 class="important">Sub-headings are useful.</h2>
+
+            <p>Donec sapien orci, porttitor quis turpis sed, placerat tempor ipsum. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Proin efficitur euismod ante, et sodales augue laoreet quis. Nunc id cursus
+                ante, eu malesuada leo. Ut augue risus, rhoncus non luctus sit amet, ultricies aliquam dolor.
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                Pellentesque enim ex, suscipit eu finibus in, convallis sed arcu. Fusce in nisl quam. Sed molestie
+                vehicula neque a tincidunt. Sed ullamcorper eleifend dignissim. Proin venenatis, magna et finibus
+                consequat, diam mauris luctus arcu, sit amet vulputate augue enim eget eros. Nullam sagittis vestibulum
+                metus, imperdiet volutpat tellus elementum et. Cras tristique nulla quis accumsan interdum. Ut efficitur
+                a mi et fringilla. Curabitur mi nisl, consectetur sit amet blandit at, semper eget mi.</p>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Stuff</td>
+                        <td>Things</td>
+                        <td>Foo</td>
+                    </tr>
+                    <tr>
+                        <td>Bar</td>
+                        <td>Baz</td>
+                        <td>Qux</td>
+                    </tr>
+                    <tr>
+                        <td class="important">Alice</td>
+                        <td>Bob</td>
+                        <td>Caitlin</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p id="amazingParagraph">Suspendisse pretium, odio vel ultricies ultricies, massa est maximus massa, vel
+                tincidunt odio sapien nec nibh. Phasellus pulvinar gravida quam. Maecenas id nisi elit. Nullam porta
+                interdum dapibus. Suspendisse maximus ligula lorem, ac tempus lacus fermentum quis. Donec fringilla
+                cursus justo vel consequat. Etiam eget sem eu ex semper blandit. In nec purus vel nibh lacinia venenatis
+                et ac purus. Proin ornare at tortor eu lobortis. Ut laoreet, arcu non convallis volutpat, enim massa
+                bibendum ipsum, sit amet mattis lorem quam et lacus. Aenean pharetra est sapien, tristique pellentesque
+                libero malesuada ut.</p>
+
+            <h3>Stuff &amp; Things about Cats</h3>
+
+            <div class="flexi">
+
+                <div class="card">
+                    <img class="card-header card-img" src="../../assets/cheetah.jpg">
+                    <div class="card-body">
+                        <h1 class="card-title">Cheetah</h1>
+                        <p>The <strong class="important">cheetah</strong> (/ˈtʃiːtə/; Acinonyx jubatus) is a large cat
+                            of the subfamily Felinae that occurs in North, Southern and East Africa, and a few
+                            localities in Iran.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-header card-img" src="../../assets/tiger.jpg">
+                    <div class="card-body">
+                        <h1 class="card-title">Tiger</h1>
+                        <p>The <strong>tiger</strong> (Panthera tigris) is the largest species among the Felidae and
+                            classified in the genus Panthera. It is most recognizable for its dark vertical stripes on
+                            reddish-orange fur with a lighter underside.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <p>Sed malesuada lectus id mi pellentesque, quis tempus erat dignissim. Sed eget mattis turpis. Maecenas
+                fringilla, lectus sed interdum sodales, justo velit feugiat tortor, sed fermentum dolor sem aliquet
+                quam. Mauris id justo massa. Maecenas vel aliquet tellus. Aliquam consequat sagittis convallis. Interdum
+                et malesuada fames ac ante ipsum primis in faucibus. Aenean finibus tincidunt urna eget egestas.
+                Praesent scelerisque lacus accumsan, cursus nisi at, iaculis neque. Fusce scelerisque ipsum felis, ac
+                ultrices est tempor at. Vestibulum at massa nec leo convallis rutrum. Nam lacinia vehicula est, at
+                rhoncus risus porta vel. Aenean vitae felis mauris. Ut iaculis, ipsum eget suscipit elementum, augue
+                mauris condimentum tortor, vitae volutpat mauris metus at erat. Vivamus interdum porttitor congue.</p>
+
+        </div>
+
+    </body>
+</html>

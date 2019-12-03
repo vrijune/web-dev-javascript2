@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Example 06 - Adding and Removing Elements</title>
+
+        <link rel="stylesheet" href="../../assets/site.css">
+
+        <script src="example07-adding-removing-elements-complex.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="flexi">
+
+                <div>
+                    <h1>Paragraphs</h1>
+                    <button onclick="addParagraph()">Add Paragraphs</button>
+                    <button onclick="removeParagraph()">Remove Paragraphs</button>
+                    <h3>Paragraphs will appear here:</h3>
+
+                    <!-- Added paragraphs will appear in this div. -->
+                    <div class="paragraphContainer"></div>
+                </div>
+
+                <div>
+                    <h1>Table</h1>
+                    <button onclick="createTable()">Create Table</button>
+                    <button onclick="addRow()">Add Rows</button>
+                    <button onclick="removeRow()">Remove Rows</button>
+                    <h3>Table will appear here:</h3>
+
+                    <!-- Added table will appear in this div. -->
+                    <div class="tableContainer"></div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+</html>
