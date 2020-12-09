@@ -48,7 +48,7 @@ window.addEventListener("load", function () {
             navItem.appendChild(navLink);
 
             //TODO: append navItem to navList
-
+            navList.appendChild(navItem);
 
         }
 
@@ -57,15 +57,38 @@ window.addEventListener("load", function () {
     function generateBodyContent() {
 
         //TODO: store a reference to the div element with the class 'container' in a 'const'/constant called container
+        const container = document.querySelector(".container");
+
 
         //TODO: create a for loop to iterate through all JSON objects in the techStackInfo array
+        for (let i = 0; i < techStackInfo.length; i++) {
 
-        //TODO: inside the loop:
-        //TODO: create constants for all necessary elements (divs, headings, subheadings, paragraphs and images)
 
-        //TODO: add the necessary text and attributes of the elements by retrieving information from the JSON objects when necessary
+            //TODO: inside the loop:
+            //TODO: create constants for all necessary elements (divs, headings, subheadings, paragraphs and images)
+            const divs = document.createElement("div");
+            const headings = document.createElement("h2");
+            const subheadings = document.createElement("h3");
+            const p = document.createElement("p");
+            const images = document.createElement("img");
+            //TODO: add the necessary text and attributes of the elements by retrieving information from the JSON objects when necessary
 
-        //TODO: append all elements in the CORRECT ORDER from child to parent for them to display in the HTML document
+            images.src = "../assets/" + techStackInfo[i].logoImage;
+            images.width = 50;
+            images.style.marginLeft = "50px";
+            subheadings.innerHTML = techStackInfo[i].type;
+            headings.innerHTML = techStackInfo[i].technology;
+            p.innerHTML = techStackInfo[i].description;
+
+            //TODO: append all elements in the CORRECT ORDER from child to parent for them to display in the HTML document
+
+            container.appendChild(divs);
+            headings.appendChild(images);
+            divs.appendChild(headings);
+            divs.appendChild(subheadings);
+            divs.appendChild(p);
+
+        }
 
     }
 
